@@ -19,6 +19,7 @@ if exists('g:lightline')
   let s:red       = [ "#e27878", 203 ]
   let s:normal_bg = [ "#161822", 234 ]
   let s:normal_fg = [ "#c7c9d1", 252 ]
+  let s:grey      = [ '#636d83', 238 ]
 
   let s:p = {'normal':{}, 'inactive':{}, 'insert':{}, 'replace':{}, 'visual':{}, 'tabline':{}}
 
@@ -27,9 +28,9 @@ if exists('g:lightline')
   let s:p.normal.middle   = [ [ s:green, s:normal_bg ] ]
 
 
-  let s:p.inactive.left   = [ [ s:normal_fg, s:normal_bg ], [ s:normal_fg, s:normal_bg ] ]
-  let s:p.inactive.right  = [ [ s:normal_fg, s:normal_bg ], [ s:normal_fg, s:normal_bg ] ]
-  let s:p.inactive.middle = [ [ s:normal_fg, s:normal_bg ] ]
+  let s:p.inactive.left   = [ [ s:blue, s:grey ], [ s:blue, s:grey ] ]
+  let s:p.inactive.right  = [ [ s:blue, s:grey ], [ s:blue, s:grey ] ]
+  let s:p.inactive.middle = [ [ s:blue, s:grey ] ]
 
   let s:p.insert.left     = [ [ s:normal_bg, s:blue ], [ s:blue, s:normal_bg ] ]
   let s:p.insert.right    = [ [ s:normal_bg, s:blue ], [ s:blue, s:normal_bg ] ]
